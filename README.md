@@ -270,7 +270,7 @@ src/main/java/com/karth/aichatbot/
 ## Author
 
 **Karthik Palani** — Java Backend Developer & AI Integration Specialist  
-6+ years of experience in Spring Boot, Microservices, and Enterprise Java
+6+ years of experience in Spring Boot, Microservices, and Enterprise Java 
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat-square&logo=linkedin)](https://linkedin.com/in/karth2009)
 [![GitHub](https://img.shields.io/badge/GitHub-Follow-black?style=flat-square&logo=github)](https://github.com/karthkaras)
