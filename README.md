@@ -6,7 +6,6 @@
 ![MySQL](https://img.shields.io/badge/MySQL-8.0-blue?style=flat-square&logo=mysql)
 ![Docker](https://img.shields.io/badge/Docker-ready-2496ED?style=flat-square&logo=docker)
 ![JWT](https://img.shields.io/badge/Auth-JWT-black?style=flat-square&logo=jsonwebtokens)
-![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)
 
 A production-ready REST API that integrates **Google Gemini AI** into a secure, scalable Spring Boot backend — featuring JWT authentication, persistent chat history, rate limiting, and full Docker support.
 
