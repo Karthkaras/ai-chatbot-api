@@ -9,7 +9,7 @@
 
 A production-ready REST API that integrates **Google Gemini AI** into a secure, scalable Spring Boot backend — featuring JWT authentication, persistent chat history, rate limiting, and full Docker support.
 
-> Built to demonstrate modern AI integration skills for enterprise clients.
+> Built to demonstrate modern AI integration skills for enterprise clients. 
 
 ---
 
