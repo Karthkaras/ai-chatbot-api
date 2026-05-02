@@ -1,0 +1,38 @@
+version: '3.8'
+
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: chatbot-mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpass
+      MYSQL_DATABASE: chatbot_db
+      MYSQL_USER: chatbot
+      MYSQL_PASSWORD: chatbot123
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  app:
+    build: .
+    container_name: chatbot-api
+    ports:
+      - "8080:8080"
+    environment:
+      GEMINI_API_KEY: ${GEMINI_API_KEY}
+      DB_USERNAME: chatbot
+      DB_PASSWORD: chatbot123
+      JWT_SECRET: ${JWT_SECRET}
+      spring.datasource.url: jdbc:mysql://mysql:3306/chatbot_db
+    depends_on:
+      mysql:
+        condition: service_healthy
+
+volumes:
+  mysql_data:
